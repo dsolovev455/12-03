@@ -37,7 +37,7 @@ WHERE district  LIKE 'k%a' and district not LIKE  '% %';
 Ответ:
 
 SELECT * FROM payment
-WHERE payment_date BETWEEN  CAST('2005-06-15' AS DATE) AND CAST('2005-06-19 00:00:00' AS DATETIME) AND amount > 10;
+WHERE payment_date >= CAST('2005-06-15 00:00:00' AS DATETIME) AND payment_date < CAST('2005-06-19 00:00:00' AS DATETIME) AND amount > 10;
 
 ![alt text](https://github.com/dsolovev455/12-03/blob/main/img/2.png)
 
